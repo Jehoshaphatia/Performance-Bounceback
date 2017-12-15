@@ -47,7 +47,7 @@ public GameObject GetPooledBall()
         ballsAmount++;
         ballPoolNum = ballsAmount - 1;
     }
-        Debug.Log(ballPoolNum);
+        //Debug.Log(ballPoolNum);
         return pooledBalls[ballPoolNum];
 }
    	

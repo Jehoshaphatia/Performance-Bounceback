@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public int score;
+	public static int score;
 
 	// Use this for initialization
 	void Start () {

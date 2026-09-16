@@ -5,10 +5,9 @@ using UnityEngine;
 
 public static class BuildQuest
 {
-    // Deliberately NOT "Build/": Unity's Android Gradle step writes its own
-    // lowercase build/ folder at the project root, which collides with the
-    // `build` branch on a case-insensitive volume. Keeping the APK out of it
-    // means that folder holds only disposable logs and is safe to delete.
+    // Deliberately NOT "Build/": Unity's Android Gradle step owns that folder
+    // and rewrites it on every build. Keeping the artifact out of it means
+    // build/ holds only disposable logs and can be cleared at any time.
     const string OutputPath = "Builds/PerformanceBounceback.apk";
 
     public static void Run()
